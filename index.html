@@ -6,6 +6,7 @@
     <title>Biya Mary George - BTech Computer Science</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <img src="images_portfolio.jpg" alt="Biya Mary George">
 </head>
 <body>
     <!-- Navigation -->
@@ -22,29 +23,45 @@
             </ul>
         </div>
     </nav>
-
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
+<section id="home" class="hero">
+    <div class="container">
+        <div class="hero-content-wrapper">
+
             <div class="hero-content">
                 <h1>Biya Mary George</h1>
                 <p class="tagline">Second Year BTech • Lyfosys Intern • Python · C · Web</p>
-                <p class="hero-desc">Second year BTech Computer Science student at TOCH Ernakulam (TIST) and current intern at Lyfosys. Proficient in Python, C, HTML, and CSS. Focused on building efficient, scalable solutions with hands-on experience in software development.</p>
+
+                <p class="hero-desc">
+                    Second year BTech Computer Science student at TOCH Ernakulam (TIST)
+                    and current intern at Lyfosys. Proficient in Python, C, HTML,
+                    and CSS. Focused on building efficient, scalable solutions with
+                    hands-on experience in software development.
+                </p>
+
                 <a href="#contact" class="btn btn-primary">Get in Touch</a>
             </div>
-        </div>
-    </section>
 
+            <div class="hero-image">
+                <img src="image_portfolio.jpg" alt="My Image" width="300">
+                
+            </div>
+
+        </div>
+    </div>
+</section>
+
+   
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about" data-reveal>
         <div class="container">
             <h2>About Me</h2>
-            <p>Second year BTech Computer Science student at TOCH Ernakulam (TIST), currently interning at Lyfosys. Proficient in Python and C programming with solid foundations in web technologies (HTML, CSS). Committed to developing clean, maintainable code and applying academic knowledge to real-world projects. Gaining practical experience in software development while maintaining excellence in coursework.</p>
+            <p>As a second-year BTech Computer Science student at TOCH Ernakulam (TIST) and an active Lyfosys intern, I build elegant digital experiences with a strong focus on reliability and user value. My work blends clean development practices in Python, C, JavaScript, HTML, and CSS with an analytical mindset to solve real-world problems. I enjoy turning thoughtful design into polished, performant solutions that users can trust.</p>
         </div>
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="education">
+    <section id="education" class="education" data-reveal>
         <div class="container">
             <h2>Education</h2>
             <div class="education-item">
@@ -61,7 +78,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="skills" data-reveal>
         <div class="container">
             <h2>Skills</h2>
             <div class="skills-grid">
@@ -86,15 +103,21 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects" data-reveal>
         <div class="container">
             <h2>Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Your Project Title</h3>
-                    <p>Add your project description here. Include what you built, the tech stack used, and key features or learnings from this project.</p>
+                <div class="project-card featured">
+                    <div class="project-chip">Featured</div>
+                    <h3>BloodLink AI</h3>
+                    <p>BloodLink AI is a JavaScript-powered platform built to accelerate emergency blood donation. It reads donation reports, identifies urgency, and connects donors with nearby recipients quickly and reliably.</p>
+                    <ul class="project-highlights">
+                        <li>JavaScript-driven data parsing and report analysis</li>
+                        <li>Smart matching logic for rapid donor notification</li>
+                        <li>Elegant and responsive UI designed for urgent action</li>
+                    </ul>
                     <div class="project-links">
-                        <a href="#" class="link">View</a>
+                        <a href="#" class="link">Live Preview</a>
                         <a href="#" class="link">GitHub</a>
                     </div>
                 </div>
@@ -119,12 +142,12 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" data-reveal>
         <div class="container">
             <h2>Let's Connect</h2>
             <p>Interested in collaborating or have a project in mind? Feel free to reach out!</p>
             <div class="contact-info">
-                <p><strong>Email:</strong> <a href="mailto:biya@gmail.com">biya@gmail.com</a></p>
+                <p><strong>Email:</strong> <a id="email" href="mailto:biya@gmail.com">biya@gmail.com</a> <button class="copy-btn" id="copyEmail">Copy</button></p>
                 <p><strong>Location:</strong> Ernakulam, India</p>
             </div>
             <div class="social-links">
@@ -141,5 +164,7 @@
             <p>&copy; 2026 Biya Mary George. All rights reserved.</p>
         </div>
     </footer>
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
 </body>
 </html>
